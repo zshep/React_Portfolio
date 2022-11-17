@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function Resume () {
 
     return(
@@ -16,12 +14,8 @@ function Resume () {
 
         </div>
 
-
-
-
     )
 
-
-
-
 }
+
+export default Resume;

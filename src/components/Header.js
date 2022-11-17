@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Navbar} from "./Navbar";
 
 
 function Header() {
@@ -7,7 +7,8 @@ function Header() {
     return(
         <header className="header">
       <h1>Shep Sheperdigian</h1>
-        
+        <Navbar/>
+
     </header>
 
 
