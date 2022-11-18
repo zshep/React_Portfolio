@@ -9,7 +9,7 @@ function About(){
             <h1>About Shep</h1>
 
             <div className="holdpic">
-                <img>Put Image here</img>
+                {/* <img>Put Image here</img> */}
             </div>
 
             <div className="aboutMe content">
