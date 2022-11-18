@@ -1,15 +1,18 @@
 import React from 'react';
-import Navbar from "./Navbar";
+import Navigationbar from "./Navbar";
+import Container from 'react-bootstrap/Container';
 
 
 function Header() {
     //
     return(
-        <header className="header">
-      <h1>Shep Sheperdigian</h1>
-        <Navbar/>
+        <Container fluid>
+         
+          <Navigationbar/>
+        
 
-    </header>
+        
+        </Container>
 
 
     )
