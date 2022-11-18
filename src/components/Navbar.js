@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavItem from 'react-bootstrap/NavItem';
+
 import {
   NavLink
 } from 'react-router-dom';
@@ -14,13 +16,14 @@ function Navigationbar() {
   return (
     <Navbar bg="light" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="/">Shep Sheperdigian</Navbar.Brand>
+      <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      
       <Navbar.Collapse id="basic-navbar-nav">
+        <Nav pullright ="true" className="me-auto">
+        <NavItem> <NavLink to='/'>About Me</NavLink> </NavItem>
         
-        <Nav className="me-auto">
-        <NavLink to='/' styles={({isActive}) => ({ color: !isActive ? "green" : "blue" })}>About Me</NavLink>
-          <NavLink to='/portfolio' styles={({isActive}) => ({ color: !isActive ? "green" : "blue"})}>Portfoilio</NavLink>
+          <NavLink to='/portfolio'>Portfoilio</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
          <NavLink to='/resume'>Resume</NavLink>
         </Nav>
