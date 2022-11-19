@@ -3,33 +3,36 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavItem from 'react-bootstrap/NavItem';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import {
   NavLink
 } from 'react-router-dom';
 
-// TODO: Create a styles object called "styles"
+// TODO: make it so the links in the nav bar are highlighted if at page
+// TODO: make sure the page doesn't reload when click links
 
 function Navigationbar() {
-  
+
 
   return (
     <Navbar bg="light" expand="lg">
-    <Container fluid>
-      <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      
+      <Container>
+        <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      </Container >
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav pullright ="true" className="me-auto">
-        <NavItem> <NavLink to='/'>About Me</NavLink> </NavItem>
-        
-          <NavLink to='/portfolio'>Portfoilio</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
-         <NavLink to='/resume'>Resume</NavLink>
-        </Nav>
+        <Container>
+          <Row className="me-auto">
+           <Col> <NavLink to='/'>About Me</NavLink> </Col> 
+           <Col> <NavLink to='/portfolio'>Portfoilio</NavLink> </Col> 
+           <Col> <NavLink to='/contact'>Contact</NavLink> </Col> 
+           <Col> <NavLink to='/resume'>Resume</NavLink> </Col> 
+          </Row>
+        </Container>
       </Navbar.Collapse>
-    </Container>
-  </Navbar>
+    </Navbar>
   );
 }
 
