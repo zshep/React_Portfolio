@@ -1,39 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 
 import Navbar from 'react-bootstrap/Navbar';
-
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import {
-  NavLink
+  Link, useMatch, useResolvedPath
 } from 'react-router-dom';
 
 // TODO: make it so the links in the nav bar are highlighted if at page
 // TODO: make sure the page doesn't reload when click links
+
+// ----------------------------stuff with tutor ----------------
+
+//     <nav>
+//     <ul> <Link to='/' styles={({isActive}) => ({
+//   color: !isActive ? "green" : "blue"
+// })}>About Me</Link></ul>
+//     <ul> <Link to='/portfolio' styles={({isActive}) => ({
+//   color: !isActive ? "green" : "blue"
+// })}>Portfoilio</Link></ul>
+//     <ul> <Link to='/contact'>Contact</Link></ul>
+//     <ul> <Link to='/resume'>Resume</Link></ul>
+//   </nav >
+
 
 function Navigationbar() {
 
 
   return (
     <Navbar bg="light" expand="lg">
+    <Row className="me-auto">
       <Container>
         <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
       </Container >
       <Navbar.Collapse id="basic-navbar-nav">
         <Container>
-          <Row className="me-auto">
-           <Col> <NavLink to='/'>About Me</NavLink> </Col> 
-           <Col> <NavLink to='/portfolio'>Portfoilio</NavLink> </Col> 
-           <Col> <NavLink to='/contact'>Contact</NavLink> </Col> 
-           <Col> <NavLink to='/resume'>Resume</NavLink> </Col> 
-          </Row>
+           <CustomLink to='/'>About Me</CustomLink>  
+           <CustomLink to='/portfolio' styles={({isActive}) => ({color: !isActive ? "green" : "red"})}>Portfoilio</CustomLink>  
+           <CustomLink to='/contact'>Contact</CustomLink>  
+           <CustomLink to='/resume'>Resume</CustomLink>  
         </Container>
-      </Navbar.Collapse>
+        </Navbar.Collapse>
+          </Row>
     </Navbar>
   );
+}
+
+function CustomLink({to,children, props}){
+  
+  
+  const resolvedPath = useResolvedPath(to) 
+  const isActive =useMatch({ path: resolvedPath.pathname, end: true})
+  return (
+
+    <ul className ={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </ul>
+  )
 }
 
 export default Navigationbar;
@@ -41,16 +68,3 @@ export default Navigationbar;
 
 
 
-
-// ----------------------------stuff with tutor ----------------
-
-//     <nav>
-//     <ul> <NavLink to='/' styles={({isActive}) => ({
-//   color: !isActive ? "green" : "blue"
-// })}>About Me</NavLink></ul>
-//     <ul> <NavLink to='/portfolio' styles={({isActive}) => ({
-//   color: !isActive ? "green" : "blue"
-// })}>Portfoilio</NavLink></ul>
-//     <ul> <NavLink to='/contact'>Contact</NavLink></ul>
-//     <ul> <NavLink to='/resume'>Resume</NavLink></ul>
-//   </nav >

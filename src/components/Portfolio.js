@@ -21,8 +21,8 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>
+                    <Card.Link href="https://sobe1290.github.io/wholetmydaWgout/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/sobe1290/wholetmydaWgout">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
 
@@ -33,8 +33,8 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>
+                    <Card.Link href="https://sheltered-shore-88493.herokuapp.com/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/Nerd_Quiz">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
 
@@ -45,45 +45,45 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>
+                    <Card.Link href="https://zshep.github.io/Coding-Quiz/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/Coding-Quiz">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
 
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                <Card.Img variant="top" src={NTpic} />
                 <Card.Body>
-                    <Card.Title>Back End NoSQL Database</Card.Title>
+                    <Card.Title>Note Taker</Card.Title>
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>
-                </Card.Body>
-            </Card>
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-                <Card.Body>
-                    <Card.Title>Back End NoSQL Database</Card.Title>
-                </Card.Body>
-
-                <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>    
+                    <Card.Link href="https://murmuring-sea-43903.herokuapp.com/notes">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/Note-taker">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
 
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                <Card.Img variant="top" src={Weatherpic}  />
                 <Card.Body>
-                    <Card.Title>Back End NoSQL Database</Card.Title>
+                    <Card.Title>Weather App</Card.Title>
+                </Card.Body>
+
+                <Card.Body>
+                    <Card.Link href="https://github.com/zshep/weather_app">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/weather_app">GitHub Repo Link</Card.Link>    
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={PWGpic}  />
+                <Card.Body>
+                    <Card.Title>Password Generator</Card.Title>
                     
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="#">Deployed App Link</Card.Link>
-                    <Card.Link href="#">GitHub Repo Link</Card.Link>
+                    <Card.Link href="https://zshep.github.io/weather_app/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/password_generator">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
         

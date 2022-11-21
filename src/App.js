@@ -1,17 +1,16 @@
 import React from "react";
 
 //importing components
-//import Navbar from './components/Navbar';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-//import {useState} from "react"
 
+// import router libraries from react-router
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -21,22 +20,25 @@ function App() {
   //var [ben, setBen] = useState(false)
 
   return (
-   
-   <Router>
+    
+    <div>
       <Header />
-      
-      <Routes>
-        <Route exact path="/" element={ <About /> } />
      
-        <Route exact path ='/portfolio' element={ <Portfolio />} />
+      
+        <Routes>
+          <Route exact path="/" element={ <About /> } />
+      
+          <Route exact path ='/portfolio' element={ <Portfolio />} />
 
-        <Route exact path ='/contact' element={ <Contact />} />
+          <Route exact path ='/contact' element={ <Contact />} />
 
-        <Route exact path ='/resume' element={ <Resume />} />
+          <Route exact path ='/resume' element={ <Resume />} />
 
-      </Routes>
+        </Routes>
+
       <Footer />
-    </Router>
+    
+      </div>
   );
 }
 
