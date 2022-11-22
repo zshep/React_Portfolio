@@ -4,13 +4,25 @@ import Button from 'react-bootstrap/Button';
 
 
 function Resume () {
+    const Clickdownload = () => {
+        fetch().then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+
+                let mylink = document.createElement('a');
+                mylink.href = fileURL;
+                mylink.download = '';
+                mylink.click();
+            })
+        })
+    }
 
     return(
 
         <div>
-            <Container>
+            <Container center>
 
-                <Button>Download Resume</Button>
+                <Button onClick={Clickdownload}>Download Resume</Button>
 
             </Container>
             

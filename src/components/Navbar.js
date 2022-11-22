@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 
@@ -27,35 +27,40 @@ import {
 
 function Navigationbar() {
 
+  //const[active, setActive] =useState(false);
 
   return (
-    <Navbar bg="light" expand="lg">
-    <Row className="me-auto">
-      <Container>
-        <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      </Container >
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Container>
-           <CustomLink to='/'>About Me</CustomLink>  
-           <CustomLink to='/portfolio' styles={({isActive}) => ({color: !isActive ? "green" : "red"})}>Portfoilio</CustomLink>  
-           <CustomLink to='/contact'>Contact</CustomLink>  
-           <CustomLink to='/resume'>Resume</CustomLink>  
-        </Container>
-        </Navbar.Collapse>
-          </Row>
-    </Navbar>
+    <>
+      <Navbar bg="light" expand="sm">
+        <Row className="me-auto">
+          <Container>
+            <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          </Container >
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav>
+              <CustomLink to='/'>About Me</CustomLink>
+              <CustomLink to='/portfolio'>Portfoilio</CustomLink>
+
+
+              <CustomLink to='/contact'>Contact</CustomLink>
+              <CustomLink to='/resume'>Resume</CustomLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Row>
+      </Navbar>
+    </>
   );
 }
 
-function CustomLink({to,children, props}){
-  
-  
-  const resolvedPath = useResolvedPath(to) 
-  const isActive =useMatch({ path: resolvedPath.pathname, end: true})
+function CustomLink({ to, children, props }) {
+
+
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
   return (
 
-    <ul className ={isActive ? "active" : ""}>
+    <ul className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
         {children}
       </Link>
