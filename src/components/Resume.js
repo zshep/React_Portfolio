@@ -5,14 +5,16 @@ import Button from 'react-bootstrap/Button';
 
 function Resume () {
     const Clickdownload = () => {
-        fetch().then(response => {
+        // using fetch moethod to grab the pdf
+        fetch('./download.pdf').then(response => {
             response.blob().then(blob => {
-                const fileURL = window.URL.createObjectURL(blob);
+                //const fileURL = window.URL.createObjectURL(blob);
 
-                let mylink = document.createElement('a');
-                mylink.href = fileURL;
-                mylink.download = '';
-                mylink.click();
+                //logic to download file with the button click
+                let alink = document.createElement('a');
+                alink.href = "./download.pdf";
+                alink.download = 'FunkyChicken';
+                alink.click();
             })
         })
     }
@@ -22,7 +24,7 @@ function Resume () {
         <div>
             <Container center>
 
-                <Button onClick={Clickdownload}>Download Resume</Button>
+                <Button value="download" onClick={Clickdownload}>Download Resume</Button>
 
             </Container>
             
