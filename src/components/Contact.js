@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { ErrorResponse } from '@remix-run/router';
+
 
 
 
@@ -29,46 +29,14 @@ const { name, email, message} = values;
         setShowMessage(false);
       }
   };
-// function to validate data from user
-  // const validateForm = () => {
-  //   console.log('validateForm has started');
-  //   // empty array to hold errors
-    
 
-  //   //validating name field
-  //   if (!values.name) {
-  //     errors.email = "Name is required";
-  //   }
-  //   //validating email field
-  //   if (!values.email) {
-  //     errors.email = "Email is required"
-  //   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-  //     errors.email = "Invalid Email Address"
-  //   }
-  //   //validating message field
-  //   if (!values.message) {
-  //     errors.message ="Message is required";      
-  //   }
-
-  //   //adds all error messages to error array (from usestate)
-  //   setFormErrors(errors);
-
-  //   //checks if there are errors or not
-  //   if (Object.keys(errors).length === 0) {
-  //     return true;
-  //     } else {
-  //       return false;
-  //   }
-  //   };
-  
 
   const handlechange = (event) => {
-    //debugging
-    //console.log("handleChange -> " + event.target.name + ": " + event.target.value);
+ 
     
     let errors ={};
-    if (!values.name) {
-      errors.name = "Name is required";
+    if (!event.target.value) {
+      errors.name = `This field is required`;
     }
     //validating email field
     if (!values.email) {
@@ -78,7 +46,7 @@ const { name, email, message} = values;
     }
     //validating if there is something in the input
     if (!event.target.value.length) {
-      errors.message =`${event.target.name} is required`;      
+      errors.name =`This field is required`;      
       console.log('fill something out!')
     } else {
       errors.message = '';
@@ -107,6 +75,7 @@ const { name, email, message} = values;
           name="name"
           value={values.name}
           onChange={handlechange}
+          onBlur={handlechange} 
         />
         {formErrors.name && (
                     <p className="text-warning">{formErrors.name}</p>
@@ -125,6 +94,7 @@ const { name, email, message} = values;
           placeholder="Enter email" 
           value ={values.email}
           onChange={handlechange}
+          onBlur={handlechange} 
           />
         <Form.Text className="text-muted">
         </Form.Text>
@@ -147,7 +117,8 @@ const { name, email, message} = values;
           name="message"
           placeholder="Write your message here"
           value={values.message}
-          onChange={handlechange} 
+          onChange={handlechange}
+          onBlur={handlechange} 
           />
         {formErrors.name && (
                     <p className="text-warning">{formErrors.name}</p>
