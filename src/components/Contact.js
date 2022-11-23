@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+//creating alert function for when the form has been submitted
+function showAlert() {
+   return alert('This form does absolutely nothing');
 
+}
 
 
 export default function Contact() {
@@ -17,23 +21,21 @@ export default function Contact() {
   });
   // creating a state to hold all the error info
   const [formErrors, setFormErrors] = useState({});
-// deconstructing the varibles from values state
-const { name, email, message} = values;
 
+// function that deals with submitting the form
   const handleSubmit = (event) => {
       event.preventDefualt();
+      console.log('the form has been submitted')
+      alert('This form does absolutely nothing');
+      
+      return 
+    
 
-      if(validate(values)) {
-        setShowMessage(true);
-      } else {
-        setShowMessage(false);
-      }
   };
 
-
+  // function to manage what changes or what happens when things change in the form
   const handlechange = (event) => {
- 
-    
+     
     let errors ={};
     if (!event.target.value) {
       errors.name = `This field is required`;
@@ -125,7 +127,7 @@ const { name, email, message} = values;
                   )}
       </Form.Group>
 
-      <Button type="submit" variant='primary'>Submit form</Button>
+      <Button type="submit" variant='primary' >Submit form</Button>
     </Form>
   )
 
