@@ -38,7 +38,7 @@ function Navigationbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </Container >
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+            <Nav className='ml-auto'>
               <CustomLink to='/'>About Me</CustomLink>
               <CustomLink to='/portfolio'>Portfoilio</CustomLink>
 

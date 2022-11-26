@@ -6,14 +6,14 @@ import Button from 'react-bootstrap/Button';
 function Resume () {
     const Clickdownload = () => {
         // using fetch moethod to grab the pdf
-        fetch('./download.pdf').then(response => {
+        fetch('./Shep_Resume.pdf').then(response => {
             response.blob().then(blob => {
                 //const fileURL = window.URL.createObjectURL(blob);
 
                 //logic to download file with the button click
                 let alink = document.createElement('a');
-                alink.href = "./download.pdf";
-                alink.download = 'FunkyChicken';
+                alink.href = "./Shep_Resume.pdf";
+                alink.download = `Shep_Resume`;
                 alink.click();
             })
         })
@@ -34,13 +34,15 @@ function Resume () {
                 <ul>HTML</ul>
                 <ul>css</ul>
                 <ul>Javascript</ul>
+                <ul>Node JS</ul>
+                <ul>Express</ul>
+                <ul>React</ul>
+                <ul>Sequalize and MySQL</ul>
+                <ul>Mongoose and MongoDB</ul>
                 <ul>Using the force</ul>
-
-
             </li>
 
-
-            {/* TO DO: THEN I see a link to a downloadable resume and a list of the developer’s proficiencies */}
+           
             </div>
 
 
