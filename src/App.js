@@ -18,10 +18,7 @@ import {
 
 function App() {
   
-  
-  // create hook to manage current page
-   //const [CurrentPage, setCurrentPage] =useState();
-
+ 
   return (
     
     <div>

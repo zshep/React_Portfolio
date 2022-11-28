@@ -13,11 +13,10 @@ function Portfolio() {
 
     return (
         <Container>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={WLYDOpic} alt ="" />
+            <Card >
                 <Card.Body>
                     <Card.Title>Whole Let the Dawg Out</Card.Title>
-                    
+                    <Card.Img variant="top" src={WLYDOpic} alt ="" />
                 </Card.Body>
 
                 <Card.Body>
@@ -25,11 +24,11 @@ function Portfolio() {
                     <Card.Link href="https://github.com/sobe1290/wholetmydaWgout">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={NerdquizPhoto} alt="picture of Nerd Quiz App" />
+           
+            <Card>
                 <Card.Body>
                     <Card.Title>Nerd Knowledge Quiz</Card.Title>
+                    <Card.Img variant="top" src={NerdquizPhoto} alt="picture of Nerd Quiz App" />
                 </Card.Body>
 
                 <Card.Body>
@@ -37,11 +36,11 @@ function Portfolio() {
                     <Card.Link href="https://github.com/zshep/Nerd_Quiz">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src= {CQpic} />
+           
+            <Card>
                 <Card.Body>
                     <Card.Title>Coding Quiz</Card.Title>
+                    <Card.Img variant="top" src= {CQpic} />
                 </Card.Body>
 
                 <Card.Body>
@@ -50,10 +49,10 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={NTpic} />
+            <Card>
                 <Card.Body>
                     <Card.Title>Note Taker</Card.Title>
+                    <Card.Img variant="top" src={NTpic} />
                 </Card.Body>
 
                 <Card.Body>
@@ -62,10 +61,10 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Weatherpic}  />
+            <Card>
                 <Card.Body>
                     <Card.Title>Weather App</Card.Title>
+                    <Card.Img variant="top" src={Weatherpic}  />
                 </Card.Body>
 
                 <Card.Body>
@@ -74,10 +73,10 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={PWGpic}  />
+            <Card>
                 <Card.Body>
                     <Card.Title>Password Generator</Card.Title>
+                    <Card.Img variant="top" src={PWGpic}  />
                     
                 </Card.Body>
 

@@ -27,10 +27,8 @@ export default function Contact() {
       event.preventDefualt();
       console.log('the form has been submitted')
       alert('This form does absolutely nothing');
-      
       return 
     
-
   };
 
   // function to manage what changes or what happens when things change in the form
@@ -65,7 +63,7 @@ export default function Contact() {
 
 
   return (
-
+    <div>
     <Form onSubmit={handleSubmit}>
       {/* Input for user name */}
       <Form.Group className="mb-3" controlId="contactForm.name">
@@ -105,10 +103,6 @@ export default function Contact() {
                   )}
       </Form.Group>
 
-
-
-
-
       {/* Input for user message */}
       <Form.Group className="mb-3" controlId="contactForm.ControlTextarea1">
         <Form.Label>Message</Form.Label>
@@ -128,9 +122,11 @@ export default function Contact() {
       </Form.Group>
 
       <Button type="submit" variant='primary' >Submit form</Button>
+      
     </Form>
+    
+    
+    
+    </div>
   )
-
-
-
 }
