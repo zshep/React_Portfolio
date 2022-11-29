@@ -18,6 +18,7 @@ const styles = {
   activeStyle: {
     color: 'white',
     background: 'black',
+    textDecoration: 'none'
   },
   non: {
     color: "black",
@@ -57,7 +58,7 @@ function CustomLink({ to, children, props }) {
   return (
     // style={sectionStyle}
     <ul>
-      <NavLink style={({isActive}) => { return isActive ? styles.activeStyle : styles.non }} exact to={to} {...props} end>
+      <NavLink style={({isActive}) => { return isActive ? styles.activeStyle : styles.non }} to={to} {...props} end>
         {children}
       </NavLink>
     </ul>

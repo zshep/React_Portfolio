@@ -1,17 +1,31 @@
 import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
+import Col from 'react-bootstrap/esm/Col';
+import Row from 'react-bootstrap/Row';
 
-// TO DO: Make pretty
+const styles = {
+    footer: {
+        textDecoration: 'none',
+        background: 'light',
+        color: 'black'
 
-// creating the html for the footer
+    }
+
+}
+
+
 function Footer() {
     return (
 
-        <Container>
+        <Row className="justify-content-md-center">
+            <Col md={{ span: 3 }}>
             <a href="https://github.com/zshep">GitHub</a>
             <br></br>
+            </Col>
+            <Col md={{ span: 3 }}>
             <a href="https://www.linkedin.com/in/shep-sheperdigian-35b94523a/">LinkedIn</a>
-        </Container>
+            </Col>
+        </Row>
 
 
     );
