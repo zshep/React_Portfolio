@@ -7,6 +7,7 @@ import CQpic from './CQpic.jpeg';
 import PWGpic from './PWGpic.jpg';
 import Weatherpic from './Weatherpic.png';
 import WLYDOpic from './WLYDOpic.png';
+import GoModepic from './GoModepic.png';
 
 
 function Portfolio() {
@@ -39,13 +40,13 @@ function Portfolio() {
            
             <Card>
                 <Card.Body>
-                    <Card.Title>Coding Quiz</Card.Title>
-                    <Card.Img variant="top" src= {CQpic} />
+                    <Card.Title>Go Mode</Card.Title>
+                    <Card.Img variant="top" src= {GoModepic} />
                 </Card.Body>
 
                 <Card.Body>
-                    <Card.Link href="https://zshep.github.io/Coding-Quiz/">Deployed App Link</Card.Link>
-                    <Card.Link href="https://github.com/zshep/Coding-Quiz">GitHub Repo Link</Card.Link>
+                    <Card.Link href="https://gomodez.herokuapp.com/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://github.com/zshep/Fortress_of_Solitude">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
 
