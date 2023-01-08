@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/esm/Col';
-
+import "./style.css"
 import {
   NavLink
 } from 'react-router-dom';
@@ -17,12 +17,22 @@ const styles = {
   },
   activeStyle: {
     color: 'white',
-    background: 'black',
+    background: 'gray',
     textDecoration: 'none'
+
   },
   non: {
     color: "black",
     textDecoration: 'none'
+  },
+  nameBanner: {
+    marginRight: 0,
+    marginLeft: "2vw" 
+  },
+  navContent: {
+    alignItems: "stretch",
+    height: "100%",
+    alignItems: "center"
   }
 }
 function Navigationbar() {
@@ -32,12 +42,13 @@ function Navigationbar() {
     <>
       <Navbar bg="light" expand="sm">
         <Col xs={12} md={8}>
-          <Navbar.Brand>Shep Sheperdigian</Navbar.Brand>
+          <Navbar.Brand style ={styles.nameBanner}>Shep Sheperdigian</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Col >
-        <Col className='justify-content-end'>
+       
+        <Col className='justify-content-end' >
           <Navbar.Collapse >
-            <Nav className='me-auto'>
+            <Nav style ={styles.navContent} className='me-auto'>
               <CustomLink to='/'>About Me</CustomLink>
               <CustomLink to='/portfolio'>Portfoilio</CustomLink>
               <CustomLink to='/contact'>Contact</CustomLink>

@@ -34,6 +34,7 @@ function App() {
 
           <Route exact path ='/resume' element={ <Resume />} />
 
+          {/* <Route exact path ='*' element={ <Resume />} /> */}
         </Routes>
 
       <Footer />

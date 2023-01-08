@@ -2,6 +2,29 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
+//Resume styles object
+const styles = {
+    button: {
+        backgroundColor: "gray",
+        borderColor: "none",
+        color: "black"
+
+    },
+    container: {
+        alignItems: "center",
+        display: "flex",
+        justifyContent: "space-around",
+        color: "green"
+    },
+    profList: {
+        alignItems: "center",
+        
+        display: "flex",
+        justifyContent: "space-around"
+    }
+
+}
+
 
 function Resume () {
     const Clickdownload = () => {
@@ -22,13 +45,13 @@ function Resume () {
     return(
 
         <div>
-            <Container center>
+            <Container style={styles.container} >
 
-                <Button value="download" onClick={Clickdownload}>Download Resume</Button>
+                <Button style={styles.button} value="download" onClick={Clickdownload}>Download Resume</Button>
 
             </Container>
             
-            <div>
+            <div style={styles.profList}>
             <h1>List of My proficiencies</h1>
             <li>
                 <ul>HTML</ul>

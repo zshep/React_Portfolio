@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+p {
+    font-family: "Nanum Gothic";
+}
