@@ -7,7 +7,9 @@ const styles = {
     footer: {
         textDecoration: 'none',
         background: 'light',
-        color: 'black'
+        color: 'black',
+        display: "inline-block",
+
 
     }
 
@@ -17,7 +19,7 @@ const styles = {
 function Footer() {
     return (
 
-        <Row className="justify-content-md-center">
+        <Row style={styles.footer}>
             <Col md={{ span: 3 }}>
             <a href="https://github.com/zshep">GitHub</a>
             <br></br>
