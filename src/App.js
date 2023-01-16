@@ -2,12 +2,12 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 //importing components
 
-import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Navigationbar from './components/Navbar';
 
 // import router libraries from react-router
 import {
@@ -30,7 +30,7 @@ function App() {
   return (
     
     <Container style={styles.main}>
-      <Header />
+      <Navigationbar />
         <br />
         
           <Routes>

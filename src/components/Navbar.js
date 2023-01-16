@@ -42,10 +42,11 @@ const styles = {
     alignItems: "stretch",
     whiteSpace: "nowrap"
   },
-  content: {
-    height: '100%',
+  navbanner: {
     display: "flex",
-    alignItems: "center"
+    flexWrap: 'nowrap',
+    justifyContent: 'space-between',
+    backgroundColor: 'whitesmoke'
   }
 }
 function Navigationbar() {
@@ -53,13 +54,13 @@ function Navigationbar() {
 
   return (
     <>
-      <Navbar bg="light" expand="md">
-        <Col xs={12} md={8}>
+      <Navbar expand="md" style={styles.navbanner}>
+        <Col>
           <Navbar.Brand style ={styles.nameBanner}>Shep Sheperdigian</Navbar.Brand>
           
         </Col >
        
-        <Col className='justify-content-end' style ={styles.navContent}>
+        <div style ={styles.navContent}>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse >
             <Nav className='me-auto'>
@@ -70,7 +71,7 @@ function Navigationbar() {
     
             </Nav>
           </Navbar.Collapse>
-        </Col>
+        </div>
       </Navbar>
     </>
   );
