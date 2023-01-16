@@ -1,5 +1,5 @@
 import React from "react";
-
+import Container from 'react-bootstrap/Container';
 //importing components
 
 import Header from './components/Header';
@@ -15,31 +15,41 @@ import {
   Route,
 } from "react-router-dom";
 
+const styles = {
+  main: {
+    display: "block",
+    width: "100%",
+    height: "100%"
+  }
+
+}
 
 function App() {
   
  
   return (
     
-    <div>
+    <Container style={styles.main}>
       <Header />
-     
-      
-        <Routes>
-          <Route exact path="/" element={ <About /> } />
-      
-          <Route exact path ='/portfolio' element={ <Portfolio />} />
+        <br />
+        <div>
+          <Routes>
+            <Route exact path="/" element={ <About /> } />
+        
+            <Route exact path ='/portfolio' element={ <Portfolio />} />
 
-          <Route exact path ='/contact' element={ <Contact />} />
+            <Route exact path ='/contact' element={ <Contact />} />
 
-          <Route exact path ='/resume' element={ <Resume />} />
+            <Route exact path ='/resume' element={ <Resume />} />
 
-          {/* <Route exact path ='*' element={ <Resume />} /> */}
-        </Routes>
+            <Route exact path ='*' element={ <About />} /> 
+          </Routes>
+        </div>
+        <br />
 
       <Footer />
     
-      </div>
+      </Container>
   );
 }
 

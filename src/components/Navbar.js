@@ -13,12 +13,18 @@ import {
 
 const styles = {
   navLink: {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    height: '100%',
+    display: "flex",
+    alignItems: "center"
+
   },
   activeStyle: {
     color: 'white',
     background: 'gray',
-    textDecoration: 'none'
+    maxHeight: "100%",
+    textDecoration: 'none',
+    marginTop: 0,
 
   },
   non: {
@@ -30,8 +36,15 @@ const styles = {
     marginLeft: "2vw" 
   },
   navContent: {
-    alignItems: "stretch",
+    //alignItems: "stretch",
     height: "100%",
+    marginRight: "2vw",
+    alignItems: "stretch",
+    whiteSpace: "nowrap"
+  },
+  content: {
+    height: '100%',
+    display: "flex",
     alignItems: "center"
   }
 }
@@ -40,15 +53,16 @@ function Navigationbar() {
 
   return (
     <>
-      <Navbar bg="light" expand="sm">
+      <Navbar bg="light" expand="md">
         <Col xs={12} md={8}>
           <Navbar.Brand style ={styles.nameBanner}>Shep Sheperdigian</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          
         </Col >
        
-        <Col className='justify-content-end' >
+        <Col className='justify-content-end' style ={styles.navContent}>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse >
-            <Nav style ={styles.navContent} className='me-auto'>
+            <Nav className='me-auto'>
               <CustomLink to='/'>About Me</CustomLink>
               <CustomLink to='/portfolio'>Portfoilio</CustomLink>
               <CustomLink to='/contact'>Contact</CustomLink>

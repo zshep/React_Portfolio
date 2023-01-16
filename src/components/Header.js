@@ -6,10 +6,10 @@ import Row from 'react-bootstrap/Row';
 function Header() {
     //
     return(
-        <Row>
+        <>
           <Navigationbar/>
               
-        </Row>
+        </>
     )
 }
 

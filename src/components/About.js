@@ -8,7 +8,8 @@ import "./style.css";
 const styles = {
     row: {
         display: "flex",
-        flexWrap: "nowrap"
+        flexWrap: "nowrap",
+        width: "80%"
     },
     pic: {
         width: "250px",
@@ -28,6 +29,7 @@ const styles = {
 function About(){
 
     return(
+        <>
         <Container>
                 <Row style={styles.row}>
                     <div>
@@ -37,16 +39,17 @@ function About(){
                         <Image src = {shepic} thumbnail/>
                     </div>
                 </Row>
-                <main>
+                <div>
                     <div style ={styles.bio}>
                         <p>
                         I have spent 10 years teaching high school physics and AP physics in the Seattle Public Schools. I have a love for learning new things including how to write code to incorporate my physics background. I am a full stack MERN Web developer looking to improve my Knowledge and skills on web development.
                         </p>
                     </div>
-                </main>
+                </div>
            
             
         </Container>
+        </>
     )
 }
 
