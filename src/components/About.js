@@ -6,50 +6,49 @@ import Container from 'react-bootstrap/Container';
 import "./style.css";
 
 const styles = {
+    main:{
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexDirection: 'row'
+
+    },
     row: {
-        display: "flex",
-        flexWrap: "nowrap",
-        width: "80%"
+        
+        width: "100%"
     },
     pic: {
         width: "250px",
         height: "auto"
     },
     bio: {
-        float: "right",
-        height: "100%"
-
+        width: '50%',
+        marginTop: "4rem"
+        
     }
     
-
-
 }
-
 
 function About(){
 
     return(
-        <>
-        <Container>
-                <Row style={styles.row}>
-                    <div>
+        <div style={styles.main}>
+        
+               
+                    <div style={styles.pic}>
                         <h1>About Me</h1>
-                    </div>
-                    <div style={styles.pic}> 
+                    
                         <Image src = {shepic} thumbnail/>
                     </div>
-                </Row>
-                <div>
+                
+                
                     <div style ={styles.bio}>
                         <p>
-                        I have spent 10 years teaching high school physics and AP physics in the Seattle Public Schools. I have a love for learning new things including how to write code to incorporate my physics background. I am a full stack MERN Web developer looking to improve my Knowledge and skills on web development.
+                        I have spent 10 years teaching high school physics and AP physics in the Seattle Public Schools. I have a love for learning new things including how to write code to incorporate my physics background. I am a full stack MERN Web developer looking to improve my knowledge and skills on web development.
                         </p>
                     </div>
-                </div>
-           
-            
-        </Container>
-        </>
+                
+                      
+        </div>
     )
 }
 

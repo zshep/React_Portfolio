@@ -32,7 +32,7 @@ function App() {
     <Container style={styles.main}>
       <Header />
         <br />
-        <div>
+        
           <Routes>
             <Route exact path="/" element={ <About /> } />
         
@@ -44,7 +44,7 @@ function App() {
 
             <Route exact path ='*' element={ <About />} /> 
           </Routes>
-        </div>
+       
         <br />
 
       <Footer />
