@@ -8,16 +8,21 @@ import { BsLinkedin } from 'react-icons/bs';
 const styles = {
     footer: {
         bottom:"0",
-        margin: "auto",
         witdh: "50%",
-        background: 'dark'
+        backgroundColor: 'whitesmoke',
+        position: 'relative',
+        textAlign: '-webkit-center'
+        
 
         
     },
     footerLinks: {
         textDecoration: 'none',
-        background: 'light',
-        textAlign: 'center'
+        textAlign: 'center',
+        margin: "1vw",
+        display: 'grid',
+        gridTemplateColumns: "1fr 1fr",
+        width: '50%'
 
     }
 
@@ -29,13 +34,11 @@ function Footer() {
 
         <footer style={styles.footer}>
            <div style={styles.footerLinks}> 
-             <div>
-                <a href="https://github.com/zshep">< BsGithub/>GitHub</a>
-                <br></br>
-             </div>
-              <div>
+             
+                <a href="https://github.com/zshep" >< BsGithub/>GitHub</a>
+             
                 <a href="https://www.linkedin.com/in/shep-sheperdigian-35b94523a/">< BsLinkedin/>LinkedIn</a>
-              </div>
+             
 
             </div>
         </footer>

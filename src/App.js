@@ -17,7 +17,7 @@ import {
 
 const styles = {
   main: {
-    display: "block",
+    display: "grid",
     width: "100%",
     height: "100%"
   }
