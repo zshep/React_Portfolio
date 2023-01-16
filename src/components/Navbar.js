@@ -65,7 +65,7 @@ function Navigationbar() {
           <Navbar.Collapse >
             <Nav className='me-auto'>
               <CustomLink to='/'>About Me</CustomLink>
-              <CustomLink to='/portfolio'>Portfoilio</CustomLink>
+              <CustomLink to='/portfolio'>Portfolio</CustomLink>
               <CustomLink to='/contact'>Contact</CustomLink>
               <CustomLink to='/resume'>Resume</CustomLink>
     

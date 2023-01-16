@@ -9,12 +9,23 @@ import Weatherpic from './Weatherpic.png';
 import WLYDOpic from './WLYDOpic.png';
 import GoModepic from './GoModepic.png';
 
+const styles = {
+    main: {
+        display: 'flex',
+        flexWrap: 'wrap'
+
+    },
+    card: {
+        width: '50%'
+    }
+
+}
 
 function Portfolio() {
 
     return (
-        <Container>
-            <Card >
+        <Container style={styles.main}>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Whole Let the Dawg Out</Card.Title>
                     <Card.Img variant="top" src={WLYDOpic} alt ="" />
@@ -26,7 +37,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
            
-            <Card>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Nerd Knowledge Quiz</Card.Title>
                     <Card.Img variant="top" src={NerdquizPhoto} alt="picture of Nerd Quiz App" />
@@ -38,7 +49,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
            
-            <Card>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Go Mode</Card.Title>
                     <Card.Img variant="top" src= {GoModepic} />
@@ -50,7 +61,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Note Taker</Card.Title>
                     <Card.Img variant="top" src={NTpic} />
@@ -62,7 +73,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Weather App</Card.Title>
                     <Card.Img variant="top" src={Weatherpic}  />
@@ -74,7 +85,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
 
-            <Card>
+            <Card style={styles.card}>
                 <Card.Body>
                     <Card.Title>Password Generator</Card.Title>
                     <Card.Img variant="top" src={PWGpic}  />
@@ -86,9 +97,7 @@ function Portfolio() {
                     <Card.Link href="https://github.com/zshep/password_generator">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
-        
-        
-        
+                       
         
         </Container>
     )
