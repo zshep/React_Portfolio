@@ -1,13 +1,17 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import "./style.css";
 
 //Resume styles object
 const styles = {
     button: {
-        backgroundColor: "gray",
+        backgroundColor: "whitesmoke",
         borderColor: "none",
-        color: "black"
+        color: "black",
+        padding: 'none',
+        btnBorderColor: 'none'
+        
 
     },
     container: {
@@ -18,7 +22,7 @@ const styles = {
     },
     profList: {
         alignItems: "center",
-        
+        listStyle: 'none',
         display: "flex",
         justifyContent: "space-around"
     }
@@ -52,18 +56,18 @@ function Resume () {
             </Container>
             
             <div style={styles.profList}>
-            <h1>List of My proficiencies</h1>
-            <li>
-                <ul>HTML</ul>
-                <ul>css</ul>
-                <ul>Javascript</ul>
-                <ul>Node JS</ul>
-                <ul>Express</ul>
-                <ul>React</ul>
-                <ul>Sequalize and MySQL</ul>
-                <ul>Mongoose and MongoDB</ul>
-                <ul>Using the force</ul>
-            </li>
+                <h1>List of Proficiencies</h1>
+                <li>
+                    <ul>HTML</ul>
+                    <ul>css</ul>
+                    <ul>Javascript</ul>
+                    <ul>Node JS</ul>
+                    <ul>Express</ul>
+                    <ul>React</ul>
+                    <ul>Sequalize and MySQL</ul>
+                    <ul>Mongoose and MongoDB</ul>
+                    <ul>Using the force</ul>
+                </li>
 
            
             </div>
