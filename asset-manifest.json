@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React_Portfolio/static/css/main.2b7ee073.css",
-    "main.js": "/React_Portfolio/static/js/main.ebce6326.js",
+    "main.css": "/React_Portfolio/static/css/main.7d94e165.css",
+    "main.js": "/React_Portfolio/static/js/main.cdb5ecd3.js",
     "static/media/WLYDOpic.png": "/React_Portfolio/static/media/WLYDOpic.a2d3c0b954df4e7b1dbf.png",
     "static/media/GoModepic.png": "/React_Portfolio/static/media/GoModepic.64eb352e200e908d129f.png",
     "static/media/Shepic.png": "/React_Portfolio/static/media/Shepic.ce0267426f3bacc6f280.png",
@@ -11,11 +11,11 @@
     "static/media/Weatherpic.png": "/React_Portfolio/static/media/Weatherpic.b9a534e36247c1c8a3db.png",
     "static/media/Notetakerpic.jpg": "/React_Portfolio/static/media/Notetakerpic.c3f7736abc71080bc5b9.jpg",
     "index.html": "/React_Portfolio/index.html",
-    "main.2b7ee073.css.map": "/React_Portfolio/static/css/main.2b7ee073.css.map",
-    "main.ebce6326.js.map": "/React_Portfolio/static/js/main.ebce6326.js.map"
+    "main.7d94e165.css.map": "/React_Portfolio/static/css/main.7d94e165.css.map",
+    "main.cdb5ecd3.js.map": "/React_Portfolio/static/js/main.cdb5ecd3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b7ee073.css",
-    "static/js/main.ebce6326.js"
+    "static/css/main.7d94e165.css",
+    "static/js/main.cdb5ecd3.js"
   ]
 }
