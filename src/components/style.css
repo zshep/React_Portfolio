@@ -8,3 +8,23 @@ p {
     font-family: "Nanum Gothic";
     margin-top: 4rem;
 }
+
+/* styling for Portfolio */
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+/* responsive design for portfolio cards */
+/* 
+@media screen and (max-width: 400px) {
+    .cards {
+        width: 100%;
+
+    } 
+
+}
+*/
