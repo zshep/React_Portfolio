@@ -51,6 +51,12 @@ function Resume () {
     return(
 
         <div>
+            <Container style={styles.container} >
+
+                <Button style={styles.button} value="download" onClick={Clickdownload}>Download Resume</Button>
+
+            </Container>
+            
                 <h1 style={styles.h1}>List of Proficiencies</h1>
 
                 
@@ -63,27 +69,22 @@ function Resume () {
 
                     <li>
                         <h5>Applications:</h5>
-                        <span></span>
+                        <span> GitHub, Insomnia, MongoDB Compass, VSCode, Shell</span>
                     </li>
 
                     <li>
                         <h5>Tools:</h5>
-                        <span></span>
+                        <span>MongoDB, Express.js, React.js, Node.js, JQuery, JEST, Sequelize</span>
                     </li>
 
                     <li>
                         <h5>Skills:</h5>
-                        <span></span>
+                        <span>REST, Test-Driven Development, Object Oriented Programming, Object Related Mapping, Responsive Web Design.</span>
                     </li>
                     
                 </ul>
             </div>
 
-            <Container style={styles.container} >
-
-                <Button style={styles.button} value="download" onClick={Clickdownload}>Download Resume</Button>
-
-            </Container>
 
         </div>
 

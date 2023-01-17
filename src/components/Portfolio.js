@@ -88,7 +88,7 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body style={styles.cardBottom}>
-                    <Card.Link href="https://github.com/zshep/weather_app">Deployed App Link</Card.Link>
+                    <Card.Link href="https://zshep.github.io/weather_app/">Deployed App Link</Card.Link>
                     <Card.Link href="https://github.com/zshep/weather_app">GitHub Repo Link</Card.Link>    
                 </Card.Body>
             </Card>
@@ -101,7 +101,7 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body style={styles.cardBottom}>
-                    <Card.Link href="https://zshep.github.io/weather_app/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://zshep.github.io/password_generator/">Deployed App Link</Card.Link>
                     <Card.Link href="https://github.com/zshep/password_generator">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>

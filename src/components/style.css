@@ -11,11 +11,19 @@ p {
     margin-top: 4rem;
 }
 
-/* styling for Resume*\
+/* styling for Resume*/
 
-/*styling for the button*/
+li {
+    padding-bottom: 3vh;
+
+}
+
+/*styling for the button (also in contact)*/
 button.btn.btn-primary {
---bs-btn-border-color: none;   
+--bs-btn-border-color: black;
+align-self: center;
+background-color: lightgray;
+color:black
 }
 
 /* styling for Portfolio */
@@ -27,6 +35,11 @@ Card {
     width: 50%;
     
 }
+
+
+
+
+
 
 /* responsive design for portfolio cards */
 

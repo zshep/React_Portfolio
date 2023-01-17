@@ -9,6 +9,19 @@ function showAlert() {
 }
 
 
+const styles = {
+  form: {
+    marginRight: '20%',
+    marginLeft: '20%'
+  },
+  welcome: {
+    marginRight: '20%',
+    marginLeft: '20%',
+    
+  }
+
+};
+
 export default function Contact() {
   // creating states to help check for validation
   const [validate, setValidated] = useState(false);
@@ -63,7 +76,14 @@ export default function Contact() {
 
 
   return (
-    <div>
+    <>
+    <div style={styles.welcome}>
+      <h1>Contact Me</h1>
+      
+
+    </div>
+    
+    <div style={styles.form}>
     <Form onSubmit={handleSubmit}>
       {/* Input for user name */}
       <Form.Group className="mb-3" controlId="contactForm.name">
@@ -120,7 +140,7 @@ export default function Contact() {
                     <p className="text-warning">{formErrors.name}</p>
                   )}
       </Form.Group>
-
+      <p>Note: The following submit feature is down for maintenance. If you would like to contact me, please email me at zsheperdigian@gmail.com </p>
       <Button type="submit" variant='primary' >Submit form</Button>
       
     </Form>
@@ -128,5 +148,6 @@ export default function Contact() {
     
     
     </div>
+    </>
   )
 }
