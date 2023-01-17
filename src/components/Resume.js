@@ -7,12 +7,10 @@ import "./style.css";
 const styles = {
     button: {
         backgroundColor: "whitesmoke",
-        borderColor: "none",
         color: "black",
         padding: 'none',
-        btnBorderColor: 'none'
-        
-
+        btnBorderColor: 'none',
+        borderColor: "none"
     },
     container: {
         alignItems: "center",
@@ -21,10 +19,14 @@ const styles = {
         color: "green"
     },
     profList: {
-        alignItems: "center",
+        
         listStyle: 'none',
-        display: "flex",
-        justifyContent: "space-around"
+        
+    },
+    h1: {
+        display: 'flex',
+        justifyContent: 'center'
+
     }
 
 }
@@ -49,29 +51,39 @@ function Resume () {
     return(
 
         <div>
+                <h1 style={styles.h1}>List of Proficiencies</h1>
+
+                
+            <div>
+                <ul style={styles.profList}>
+                    <li>
+                        <h5>Languages:</h5>
+                        <span>HTML5, CSS, JavaScript ES6, SQL, Python</span>
+                    </li>
+
+                    <li>
+                        <h5>Applications:</h5>
+                        <span></span>
+                    </li>
+
+                    <li>
+                        <h5>Tools:</h5>
+                        <span></span>
+                    </li>
+
+                    <li>
+                        <h5>Skills:</h5>
+                        <span></span>
+                    </li>
+                    
+                </ul>
+            </div>
+
             <Container style={styles.container} >
 
                 <Button style={styles.button} value="download" onClick={Clickdownload}>Download Resume</Button>
 
             </Container>
-            
-            <div style={styles.profList}>
-                <h1>List of Proficiencies</h1>
-                <li>
-                    <ul>HTML</ul>
-                    <ul>css</ul>
-                    <ul>Javascript</ul>
-                    <ul>Node JS</ul>
-                    <ul>Express</ul>
-                    <ul>React</ul>
-                    <ul>Sequalize and MySQL</ul>
-                    <ul>Mongoose and MongoDB</ul>
-                    <ul>Using the force</ul>
-                </li>
-
-           
-            </div>
-
 
         </div>
 

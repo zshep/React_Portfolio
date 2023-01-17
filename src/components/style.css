@@ -5,15 +5,6 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 
-.btn:focus,.btn:active:focus,.btn.active:focus,
-.btn.focus,.btn:active.focus,.btn.active.focus {
-    outline: none;
-}
-
-.btn-primary {
-    --bs-btn-border-color: none;
-
-}
 
 p {
     font-family: "Nanum Gothic";
@@ -22,6 +13,10 @@ p {
 
 /* styling for Resume*\
 
+/*styling for the button*/
+button.btn.btn-primary {
+--bs-btn-border-color: none;   
+}
 
 /* styling for Portfolio */
 
