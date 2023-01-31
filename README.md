@@ -2,7 +2,7 @@
 
  Link to profile: https://zshep.github.io/React_Portfolio/
  
- ![Alt text](./screenshot.png?raw=true "Screenshot")
+ ![Alt text](./screenshot.jpg?raw=true "Screenshot")
 
  ## **Table of Contents**
   
