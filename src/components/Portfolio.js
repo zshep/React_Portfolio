@@ -76,7 +76,7 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body style={styles.cardBottom}>
-                    <Card.Link href="https://murmuring-sea-43903.herokuapp.com/notes">Deployed App Link</Card.Link>
+                    <Card.Link href="https://damp-citadel-49094.herokuapp.com/">Deployed App Link</Card.Link>
                     <Card.Link href="https://github.com/zshep/Note-taker">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
