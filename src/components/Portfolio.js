@@ -52,7 +52,7 @@ function Portfolio() {
                 </Card.Body>
 
                 <Card.Body style={styles.cardBottom}>
-                    <Card.Link href="https://sheltered-shore-88493.herokuapp.com/">Deployed App Link</Card.Link>
+                    <Card.Link href="https://enigmatic-river-65357.herokuapp.com/">Deployed App Link</Card.Link>
                     <Card.Link href="https://github.com/zshep/Nerd_Quiz">GitHub Repo Link</Card.Link>
                 </Card.Body>
             </Card>
