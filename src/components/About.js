@@ -43,7 +43,9 @@ function About(){
                 
                     <div style ={styles.bio}>
                         <p>
-                        I have spent 10 years teaching high school physics and AP physics in the Seattle Public Schools. I have a love for learning new things including how to write code to incorporate my physics background. I am a full stack MERN Web developer looking to improve my knowledge and skills on web development.
+                        My name is Zach Sheperdigian, but please call me Shep. I have spent 10 years as an educator teaching remdial and advanced physics to high school students. I have a huge passion for learning in general so I was naturally excited when I started a fullstack web development bootcamp.
+
+                        I love how programing gives you the ability to build essientially anything you want, your imagination being the only limitation. While I am still relatively new to coding I love figuring new things out and learning new technologies to make greater web applications. It feels so rewarding to go from bashing your head against the keyboard to sucessfuly making your program work. 
                         </p>
                     </div>
                 
