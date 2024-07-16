@@ -17,9 +17,11 @@ import {
 
 const styles = {
   main: {
-    display: "grid",
+    display:"grid",
     width: "100%",
-    height: "100%"
+    height: "100%",
+    
+
   }
 
 }
@@ -49,7 +51,7 @@ function App() {
 
       <Footer />
     
-      </Container>
+    </Container>
   );
 }
 
