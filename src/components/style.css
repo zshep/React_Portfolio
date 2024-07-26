@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(67, 72, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+
+p {
+    font-family: "Nanum Gothic";
+    margin-top: 4rem;
+}
+
+/* styling for Resume*/
+
+li {
+    padding-bottom: 3vh;
+
+}
+
+/*styling for the button (also in contact)*/
+button.btn.btn-primary {
+--bs-btn-border-color: black;
+align-self: center;
+background-color: lightgray;
+color:black
+}
+
+/* styling for Portfolio */
+
+Card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    
+}
+
+
+
+
+
+
+/* responsive design for portfolio cards */
+
+@media screen and (max-width: 400px) {
+    Card {
+        width: 100%;
+
+    } 
+
+}
