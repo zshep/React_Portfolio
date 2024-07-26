@@ -37,16 +37,20 @@ const styles = {
   },
   navContent: {
     //alignItems: "stretch",
+    display:'flex',
     height: "100%",
     marginRight: "2vw",
-    alignItems: "stretch",
-    whiteSpace: "nowrap"
+    alignItems: "center",
+    whiteSpace: "nowrap",
+    marginTop: '1.8vw',
+
   },
   navbanner: {
     display: "flex",
     flexWrap: 'nowrap',
     justifyContent: 'space-between',
-    backgroundColor: 'whitesmoke'
+    backgroundColor: 'whitesmoke',
+    alignItems: 'center',
   }
 }
 function Navigationbar() {
@@ -55,10 +59,10 @@ function Navigationbar() {
   return (
     <>
       <Navbar expand="md" style={styles.navbanner}>
-        <Col>
+        <div>
           <Navbar.Brand style ={styles.nameBanner}>Shep Sheperdigian</Navbar.Brand>
           
-        </Col >
+        </div >
        
         <div style ={styles.navContent}>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

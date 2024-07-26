@@ -7,14 +7,18 @@ import { BsLinkedin } from 'react-icons/bs';
 
 const styles = {
     footer: {
-        bottom:"0",
-        witdh: "50%",
+        display:'flex',
+        justifyContent:'center',
+        bottom:"0px",
+        witdh: "100%",
+        height:'10vh',
         backgroundColor: 'whitesmoke',
-        position: 'relative',
-        textAlign: '-webkit-center'
-        
-
-        
+        position: 'bottom',
+        alignItems:'center',
+        textAlign: '-webkit-center',
+        margin:'0px',
+        alignSelf:'flex-end',
+                
     },
     footerLinks: {
         textDecoration: 'none',
@@ -31,7 +35,6 @@ const styles = {
 
 function Footer() {
     return (
-
         <footer style={styles.footer}>
            <div style={styles.footerLinks}> 
              
